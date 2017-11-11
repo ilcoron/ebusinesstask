@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #00296d;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    max-width: 65em;
+    margin: 0em auto;
+}
+
+main {
+    display: block;
+    /* für IE */
+
+    height: auto;
+}
+
+section {
+    padding: 3em 1em 1em;
+    width: 100%;
+    background: white;
+}
+
+
+img {
+    border: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    color: #00296d;
+    padding: 0.5em;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 0.5em 0;
+    color: #003478;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: darkorange;
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    background: #00296d;
+    list-style: none;
+}
+
+#navigation li {
+    float: left;
+    height: 2em;
+    text-align: center;
+    margin: 0;
+    border: solid 1px gold;
+    border-radius: .5em;
+    line-height: 150%;
+    font-family: Arial bold, Helvetica, sans-serif;
+    margin: 0 0 0 1em;
+}
+
+#navigation li a,
+#navigation li a:link,
+#navigation li a:visited {
+    text-decoration: none;
+    display: block;
+    height: 2em;
+    color: gold;
+    font-weight: bold;
+    padding: 0.1em 1em;
+}
+
+#navigation li a:hover,
+#navigation li a:focus,
+#navigation li a:active {
+    background: gold;
+    color: #00296d;
+    border-radius: .5em;
+}
+
+
+/*DL, DT, DD Datenliste*/
+
+dt {
+    float: left;
+    clear: left;
+    width: 130px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 0 5px 135px;
+    padding: 0 0 0.5em 0;
+    font-size: 1.5em;
+}
+
+.flag {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 3em;
+    height: 2em;
+    background: white;
+    border: 1px solid #333;
+}
+
+
+
+.yy {
+    position: absolute;
+    background: #fff;
+    height: 0;
+    width: 1.4em;
+    left: .8em;
+    top: 0.3em;
+    border-top: .7em solid #c40e2f;
+    /*dark red*/
+
+    border-bottom: .7em solid blue;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 1em;
+}
+
+.yin {
+    position: absolute;
+    top: -0.35em;
+    left: 0em;
+    background: #c40e2f;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 1em;
+}
+
+.yang {
+    position: absolute;
+    top: -0.35em;
+    left: 0.7em;
+    background: #003478;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 1em;
+}
+
+#strcontainer1 {
+    position: absolute;
+    font-size: 0.5em;
+    top: 0em;
+    left: 0.4em;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#strcontainer2 {
+    position: absolute;
+    font-size: 0.5em;
+    top: 0em;
+    right: 0.4em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#strcontainer3 {
+    position: absolute;
+    font-size: 0.5em;
+    bottom: 0em;
+    left: 0.4em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#strcontainer4 {
+    position: absolute;
+    font-size: 0.5em;
+    bottom: 0em;
+    right: 0.4em;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

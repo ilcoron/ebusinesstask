@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/ex.css">
+
+    <script LANGUAGE="JavaScript" type="text/javascript">
+        function display() {
+            DispWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=300,height=200')
+            message = "<ul><li><b>NAME: </b>" + document.form1.lastname.value;
+            message += "<li><b>VORNAME: </b>" + document.form1.firstname.value;
+            message += "<li><b>EMAIL: </b>" + document.form1.email.value;
+            message += "<li><b>KOMMENTAR: </b>" + document.form1.kommentar.value+ "</ul>";
+            DispWin.document.write(message);
+        }
+    </script>
+</head>
+<nav>
+    <ul id="navigation">
+        <li><img src="icon.png">
+        </li><li><a href="./index.html">Startseite</a>
+        </li>
+        <li><a href="./angebote.html">Angebote</a>
+        </li>
+        <li><a href="./kontakt.html">Kontakt</a>
+        </li>
+    </ul>
+</nav>
+<section id="part_2">
+    <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+            href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <h1>Überschrift 1</h1>
+    <form name="form1">
+        <fieldset>
+            <legend>Kontaktformular:</legend>
+            Vorname:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Nachname:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br>
+            Email:<br>
+            <input type="text" name="email" value="mickey@mouse.unibe.ch">
+            <br>
+            Kommentar:<br>
+            <textarea name="kommentar" rows="6" cols="30" >Ihre Frage...</textarea>
+            <br><br>
+            <input TYPE="BUTTON" VALUE="Display" onClick="display();">
+        </fieldset>
+
+    </form>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</section>
+</html>
