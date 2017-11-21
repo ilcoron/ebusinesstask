@@ -53,6 +53,14 @@ h3 {
     padding: 0;
     color: darkorange;
 }
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
 
 #navigation {
     position: absolute;
